@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I Feria STEM Conalbista 2026: ciencia, tecnolog&iacute;a, ingenier&iacute;a, matem&aacute;ticas e innovaci&oacute;n sostenible.">
+  <title>I Feria STEM Conalbista 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">STEM</span>
+        <span>Conalbista 2026</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Areas STEM</a>
+        <a href="#cronograma">Cronograma</a>
+        <a href="#robotica">Rob&oacute;tica</a>
+        <a href="#ubicacion">Ubicaci&oacute;n</a>
+        <a href="#galeria">Galer&iacute;a</a>
+        <a href="#datos">Datos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-grid"></div>
+      <div class="container hero-content reveal">
+        <span class="eyebrow">Ciencia, tecnolog&iacute;a e innovaci&oacute;n educativa</span>
+        <h1 id="hero-title">I FERIA STEM CONALBISTA 2026</h1>
+        <p class="hero-institution">Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino</p>
+        <p class="hero-subtitle">"Asumiendo acciones sostenibles"</p>
+        <p class="hero-text">Experimenta, Innova y Aprende</p>
+        <a class="btn-primary" href="#sobre">Explorar la Feria</a>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+
+        <h2>Faltan para la Feria STEM</h2>
+
+      <div class="countdown">
+
+          <div class="box">
+            <span id="days">00</span>
+              <p>Días</p>
+          </div>
+
+          <div class="box">
+            <span id="hours">00</span>
+            <p>Horas</p>
+          </div>
+
+          <div class="box">
+            <span id="minutes">00</span>
+              <p>Minutos</p>
+          </div>
+
+          <div class="box">
+            <span id="seconds">00</span>
+              <p>Segundos</p>
+              </div>
+
+      </div>
+
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container split-layout">
+        <div class="section-copy reveal">
+          <span class="section-kicker">Sobre la Feria</span>
+          <h2 id="about-title">Un encuentro para crear soluciones sostenibles</h2>
+          <p>
+            La Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino invita a la comunidad educativa a participar en un encuentro de ciencia, tecnolog&iacute;a, ingenier&iacute;a y matem&aacute;ticas orientado al desarrollo sostenible.
+          </p>
+        </div>
+        <div class="innovation-panel reveal" aria-label="Conceptos de la feria">
+          <div class="orbit-core">STEM</div>
+          <span class="orbit-dot science">Ciencia</span>
+          <span class="orbit-dot tech">Tecnolog&iacute;a</span>
+          <span class="orbit-dot engineering">Ingenier&iacute;a</span>
+          <span class="orbit-dot math">Matem&aacute;ticas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas" id="areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Areas STEM</span>
+          <h2 id="areas-title">Cuatro caminos para explorar, probar y aprender</h2>
+        </div>
+        <div class="card-grid areas-grid">
+          <article class="stem-card reveal">
+            <div class="icon science-icon" aria-hidden="true">A</div>
+            <h3>Ciencia</h3>
+            <p>Observacion, experimentacion y pensamiento critico para comprender el mundo.</p>
+          </article>
+          <article class="stem-card reveal">
+            <div class="icon tech-icon" aria-hidden="true">B</div>
+            <h3>Tecnolog&iacute;a</h3>
+            <p>Herramientas digitales, programaci&oacute;n y prototipos al servicio de la comunidad.</p>
+          </article>
+          <article class="stem-card reveal">
+            <div class="icon engineering-icon" aria-hidden="true">C</div>
+            <h3>Ingenier&iacute;a</h3>
+            <p>Dise&ntilde;o, construcci&oacute;n y mejora de soluciones con enfoque sostenible.</p>
+          </article>
+          <article class="stem-card reveal">
+            <div class="icon math-icon" aria-hidden="true">D</div>
+            <h3>Matem&aacute;ticas</h3>
+            <p>An&aacute;lisis, patrones y modelos para tomar mejores decisiones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section invited" id="instituciones" aria-labelledby="invited-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Instituciones Invitadas</span>
+          <h2 id="invited-title">Actividades principales</h2>
+        </div>
+        <div class="activity-grid">
+          <article class="activity-card reveal">
+            <span class="activity-time">7:00 AM</span>
+            <h3>Montaje de Stand</h3>
+          </article>
+          <article class="activity-card reveal">
+            <span class="activity-time">8:30 AM</span>
+            <h3>Desaf&iacute;o STEM</h3>
+          </article>
+          <article class="activity-card reveal">
+            <span class="activity-time">10:00 AM</span>
+            <h3>Presentaci&oacute;n de Proyecto de Rob&oacute;tica</h3>
+          </article>
+          <article class="activity-card highlight reveal">
+            <span class="activity-time">Actividad especial</span>
+            <h3>Competencia Interinstitucional de Rob&oacute;tica Sostenible</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule" id="cronograma" aria-labelledby="schedule-title">
+      <div class="container split-layout schedule-layout">
+        <div class="section-copy reveal">
+          <span class="section-kicker">Cronograma</span>
+          <h2 id="schedule-title">Una jornada para experimentar de principio a fin</h2>
+          <p>La agenda est&aacute; organizada para que cada instituci&oacute;n pueda instalar, participar y presentar sus proyectos con claridad.</p>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <time>7:00 AM</time>
+            <span>Montaje de Stand</span>
+          </div>
+          <div class="timeline-item">
+            <time>8:00 AM</time>
+            <span>Inicio Oficial</span>
+          </div>
+          <div class="timeline-item">
+            <time>8:30 AM</time>
+            <span>Desaf&iacute;o STEM</span>
+          </div>
+          <div class="timeline-item">
+            <time>10:00 AM</time>
+            <span>Presentaci&oacute;n de Rob&oacute;tica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section robotics" id="robotica" aria-labelledby="robotics-title">
+      <div class="container robotics-wrap">
+        <div class="robot-visual reveal" aria-hidden="true">
+          <div class="robot-head">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="robot-body">
+            <div class="motor-ring"></div>
+          </div>
+          <div class="robot-base"></div>
+        </div>
+        <div class="section-copy reveal">
+          <span class="section-kicker">Competencia de Rob&oacute;tica Sostenible</span>
+          <h2 id="robotics-title">Innovar con materiales reutilizados</h2>
+          <div class="feature-list">
+            <div class="feature-item">
+              <strong>Premiaci&oacute;n a la innovaci&oacute;n</strong>
+              <span>Se reconocen ideas creativas, funcionales y sostenibles.</span>
+            </div>
+            <div class="feature-item">
+              <strong>Uso obligatorio de material reutilizado</strong>
+              <span>Los prototipos deben demostrar aprovechamiento responsable de recursos.</span>
+            </div>
+            <div class="feature-item">
+              <strong>Impulsado por mini motor el&eacute;ctrico</strong>
+              <span>El movimiento debe integrarse al dise&ntilde;o del robot participante.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section event-data" id="datos" aria-labelledby="data-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Datos del Evento</span>
+          <h2 id="data-title">Informacion general</h2>
+        </div>
+        <div class="data-grid">
+          <article class="data-card reveal">
+            <span class="data-label">Fecha</span>
+            <strong>11 de junio de 2026</strong>
+          </article>
+          <article class="data-card reveal">
+            <span class="data-label">Hora</span>
+            <strong>8:00 AM</strong>
+          </article>
+          <article class="data-card wide reveal">
+            <span class="data-label">Lugar</span>
+            <strong>Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="ubicacion" aria-labelledby="location-title">
+      <div class="container location-layout">
+        <div class="section-copy reveal">
+          <span class="section-kicker">Ubicaci&oacute;n del Evento</span>
+          <h2 id="location-title">Nos encontraremos en El Banco, Magdalena</h2>
+          <p>
+            La feria se realizar&aacute; en las instalaciones de la Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino, un espacio para compartir proyectos, aprender e inspirar nuevas acciones sostenibles.
+          </p>
+        </div>
+        <div class="location-card reveal">
+          <span class="location-pin" aria-hidden="true"></span>
+          <span class="data-label">Lugar</span>
+          <strong>Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino</strong>
+          <p>El Banco - Magdalena</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Galer&iacute;a STEM</span>
+          <h2 id="gallery-title">Im&aacute;genes oficiales de la feria</h2>
+          <p>Identidad visual, invitaci&oacute;n y piezas gr&aacute;ficas oficiales de la I Feria STEM Conalbista 2026.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card poster reveal">
+            <img src="assets/WhatsApp%20Image%202026-06-01%20at%2010.08.48%20AM.jpeg" alt="Afiche oficial de la I Feria STEM Conalbista 2026" loading="lazy">
+            <figcaption>Afiche oficial</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/WhatsApp%20Image%202026-06-01%20at%2010.30.18%20AM.jpeg" alt="Logo oficial de la Feria STEM Conalbista" loading="lazy">
+            <figcaption>Identidad institucional STEM</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/WhatsApp%20Image%202026-06-01%20at%2010.30.24%20AM.jpeg" alt="Imagen oficial colorida de la Feria STEM Conalbista" loading="lazy">
+            <figcaption>Imagen promocional</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing" aria-labelledby="closing-title">
+      <div class="container closing-content reveal">
+        <span class="section-kicker">&iexcl;Te Esperamos!</span>
+        <h2 id="closing-title">Ven a vivir la ciencia, la innovaci&oacute;n y la sostenibilidad</h2>
+        <div class="closing-grid">
+          <div>
+            <span>Fecha</span>
+            <strong>11 de junio de 2026</strong>
+          </div>
+          <div>
+            <span>Hora</span>
+            <strong>7:00 AM</strong>
+          </div>
+          <div>
+            <span>Lugar</span>
+            <strong>Instituci&oacute;n Educativa T&eacute;cnica Departamental Jos&eacute; Benito Barros Palomino</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <strong>I Feria STEM Conalbista 2026</strong>
+      <p>"Ciencia, Innovaci&oacute;n y Sostenibilidad nos unen"</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
