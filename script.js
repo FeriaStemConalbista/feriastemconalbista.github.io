@@ -38,9 +38,15 @@ revealElements.forEach(element => observer.observe(element));
 
 function resizeCanvas() {
   const ratio = window.devicePixelRatio || 1;
-  canvas.width = Math.floor(canvas.offsetWidth * ratio);
-  canvas.height = Math.floor(canvas.offsetHeight * ratio);
-  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+
+  canvas.width = width * ratio;
+  canvas.height = height * ratio;
+
+  ctx.setTransform(ratio,0,0,ratio,0,0);
+
   createParticles();
 }
 
@@ -49,14 +55,39 @@ function createParticles() {
   const height = canvas.offsetHeight;
   const total = Math.min(90, Math.max(38, Math.floor(width / 16)));
 
-  particles = Array.from({ length: total }, () => ({
-    x: Math.random() * width,
-    y: Math.random() * height,
-    radius: Math.random() * 2 + 1,
-    speedX: (Math.random() - 0.5) * 0.55,
-    speedY: (Math.random() - 0.5) * 0.55,
-    hue: Math.random() > 0.5 ? "46, 139, 87" : "243, 156, 18"
-  }));
+particles = [];
+
+const cols = 18;
+const rows = 10;
+
+for(let row = 0; row < rows; row++){
+
+    for(let col = 0; col < cols; col++){
+
+        particles.push({
+
+            x: (width / cols) * col +
+               Math.random() * 40,
+
+            y: (height / rows) * row +
+               Math.random() * 40,
+
+            radius: Math.random() * 2 + 1,
+
+            speedX: (Math.random() - 0.5) * 0.3,
+
+            speedY: (Math.random() - 0.5) * 0.3,
+
+            hue:
+              Math.random() > 0.5
+              ? "46, 139, 87"
+              : "243, 156, 18"
+
+        });
+
+    }
+
+}
 }
 
 function drawParticles() {
